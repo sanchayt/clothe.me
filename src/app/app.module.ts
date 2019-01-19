@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { ListClothesComponent } from './wardrobe/list-clothes/list-clothes.component';
 import { NavbarComponent } from './dashboard/navbar/navbar.component';
 import { OutfitComponent } from './wardrobe/outfit/outfit.component';
-import { ItenSuggestionComponent } from './wardrobe/iten-suggestion/iten-suggestion.component';
 import { ItemSuggestionComponent } from './wardrobe/item-suggestion/item-suggestion.component';
 
 
@@ -22,7 +21,6 @@ import { ItemSuggestionComponent } from './wardrobe/item-suggestion/item-suggest
     AddClothesComponent,
     NavbarComponent,
     OutfitComponent,
-    ItenSuggestionComponent,
     ItemSuggestionComponent
   ],
   imports: [

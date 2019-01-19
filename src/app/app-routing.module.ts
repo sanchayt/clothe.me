@@ -1,7 +1,27 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { OutfitComponent } from './wardrobe/outfit/outfit.component';
+import { MyWardrobeComponent } from './wardrobe';
 
-const routes: Routes = [];
+const routes: Routes = [
+
+  {
+    path: 'outfit',
+    component: OutfitComponent
+  },
+
+  {
+    path: 'home',
+    component: MyWardrobeComponent
+  },
+
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  }
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
