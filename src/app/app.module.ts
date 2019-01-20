@@ -1,3 +1,4 @@
+import { ClothesService } from './services/clothes.service';
 import { MyWardrobeComponent, AddClothesComponent } from './wardrobe';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -27,7 +28,7 @@ import { ItemSuggestionComponent } from './wardrobe/item-suggestion/item-suggest
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ClothesService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

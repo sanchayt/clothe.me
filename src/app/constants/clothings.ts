@@ -1,6 +1,6 @@
 export const Clothing =  [
   'Headwear',
-  'Tops',
+  'Top',
   'Bottoms',
   'Footwear'
 ];

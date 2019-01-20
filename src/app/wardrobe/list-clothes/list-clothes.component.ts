@@ -1,3 +1,4 @@
+import { ClothesService } from './../../services/clothes.service';
 import { Bottoms } from './../../constants/bottoms';
 import { Footwear } from './../../constants/footwear';
 import { Headwear } from './../../constants/headwear';
@@ -16,16 +17,19 @@ export class ListClothesComponent implements OnInit {
   @Input() Title: String;
 
   Images: String[];
-  constructor() { }
+  constructor(private clothService: ClothesService, ) { }
 
   ngOnInit() {
     this.checkTitle();
+    this.clothService.getClothes().subscribe(data => {
+      console.log(data);
+    });
   }
 
   checkTitle() {
     let file: String[];
     switch (this.Title) {
-      case 'Tops':  file = Tops;
+      case 'Top':  file = Tops;
       break;
       case 'Headwear':  file = Headwear;
       break;

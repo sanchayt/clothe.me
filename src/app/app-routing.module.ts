@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { OutfitComponent } from './wardrobe/outfit/outfit.component';
-import { MyWardrobeComponent } from './wardrobe';
+import { MyWardrobeComponent, AddClothesComponent } from './wardrobe';
 
 const routes: Routes = [
 
@@ -13,6 +13,10 @@ const routes: Routes = [
   {
     path: 'home',
     component: MyWardrobeComponent
+  },
+  {
+    path: 'add-clothes',
+    component: AddClothesComponent
   },
 
   {

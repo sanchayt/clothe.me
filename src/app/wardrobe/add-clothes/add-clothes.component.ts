@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 
 export class AddClothesComponent implements OnInit {
 
-  img_src = '';
+  img_src = '../../../assets/Images/blue-jeans.jpg';
 
   ngOnInit() {}
   constructor() {

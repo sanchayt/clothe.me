@@ -1,0 +1,26 @@
+.profile-img {
+  object-fit: cover;
+  padding-left: 10%;
+  padding-top: 2%;
+  margin-bottom: 5%;
+  float: left;
+}
+/* .profile-img img {
+  /* width: 200px;
+  height: 200px;
+} */
+.profile-img .btn{
+  padding: 0 10%;
+}
+
+.edit-btn {
+  background-color: #5bc0de;
+  color: white;
+  align-content: center;
+  align-items: center;
+  /* font-size: 12px; */
+  width: 60px;
+  height: 45px;
+  /* margin-right: 1%; */
+  padding-top: 4px !important ;
+}
